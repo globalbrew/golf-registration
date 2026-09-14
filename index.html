@@ -248,7 +248,7 @@
       <div class="section-head">
         <div class="kicker">Reserve your spot</div>
         <h2>Register your foursome.</h2>
-        <p class="lede">We intentionally kept this short. Lock in your team now; if you don’t know every golfer yet, leave those names blank and send them later.</p>
+        <p class="lede">We intentionally kept this short. Lock in your team now; if you don’t know every golfer yet, leave those names blank and send them later. Each foursome can be credited to a Tigers player to help offset that player’s team fees.</p>
       </div>
 
       <div class="registration-layout">
@@ -300,6 +300,31 @@
             </fieldset>
 
             <fieldset>
+              <legend>Tigers player credit</legend>
+              <div class="grid-2">
+                <div class="field full">
+                  <label for="player_credit">Which Tigers player are you playing for?</label>
+                  <select id="player_credit" name="player_credit" required>
+                    <option value="">Choose a Tigers player</option>
+                    <option>Connor Evers</option>
+                    <option>Connor High</option>
+                    <option>Cameron Kerns</option>
+                    <option>Zach Goin</option>
+                    <option>Braxton Parnell</option>
+                    <option>Henry Wagoner</option>
+                    <option>Joe King</option>
+                    <option>Gavin Brueckner</option>
+                    <option>Grant Brueckner</option>
+                    <option>Oliver Swan</option>
+                    <option>Chuck Horan</option>
+                    <option>Just supporting the club!</option>
+                  </select>
+                  <div class="helper">Your foursome will be credited toward this player’s team fees. If you’re not connected to a specific player, choose “Just supporting the club!”</div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
               <legend>Check-in</legend>
               <div class="grid-2">
                 <div class="field">
@@ -338,7 +363,7 @@
         <div class="section-head">
           <div class="kicker" style="color:var(--brew)">Support the tournament</div>
           <h2>Put your business on the course—or help us build the auction.</h2>
-          <p class="lede">You don’t need to be golfing to be part of the day. We have $125 tee sponsorships available and we’re accepting products, gift cards, experiences and other items for the silent auction.</p>
+          <p class="lede">You don’t need to be golfing to be part of the day. We have $125 tee sponsorships available and we’re accepting products, gift cards, experiences and other items for the silent auction. Each sponsorship or donated item can be credited to a Tigers player’s team fees.</p>
         </div>
 
         <div class="support-grid">
@@ -386,6 +411,25 @@
               <div class="field"><label for="business_name">Business / organization <span class="optional">optional</span></label><input id="business_name" name="business_name" placeholder="Company or organization" /></div>
               <div class="field"><label for="support_email">Email</label><input id="support_email" type="email" name="support_email" required placeholder="you@example.com" /></div>
               <div class="field"><label for="support_phone">Mobile phone</label><input id="support_phone" type="tel" name="support_phone" required placeholder="(618) 555-1234" /></div>
+              <div class="field full">
+                <label for="support_player_credit">Which Tigers player should receive credit?</label>
+                <select id="support_player_credit" name="player_credit" required>
+                    <option value="">Choose a Tigers player</option>
+                    <option>Connor Evers</option>
+                    <option>Connor High</option>
+                    <option>Cameron Kerns</option>
+                    <option>Zach Goin</option>
+                    <option>Braxton Parnell</option>
+                    <option>Henry Wagoner</option>
+                    <option>Joe King</option>
+                    <option>Gavin Brueckner</option>
+                    <option>Grant Brueckner</option>
+                    <option>Oliver Swan</option>
+                    <option>Chuck Horan</option>
+                    <option>Just supporting the club!</option>
+                </select>
+                <div class="helper">The tee sponsorship and/or silent auction donation from this submission will be credited toward this player’s team fees.</div>
+              </div>
               <div class="field full"><label for="auction_item">Silent auction item <span class="optional">if applicable</span></label><input id="auction_item" name="auction_item" placeholder="Example: $100 gift card, service package, gift basket…" /></div>
               <div class="field full"><label for="support_notes">Notes <span class="optional">optional</span></label><textarea id="support_notes" name="support_notes" placeholder="Questions, logo/contact details, auction item value, pickup information, etc."></textarea></div>
             </div>
